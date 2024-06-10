@@ -26,7 +26,12 @@ var CODE128B = function (_CODE) {
 	function CODE128B(string, options) {
 		_classCallCheck(this, CODE128B);
 
-		return _possibleConstructorReturn(this, (CODE128B.__proto__ || Object.getPrototypeOf(CODE128B)).call(this, _constants.B_START_CHAR + string, options));
+		if (options.optimise && new RegExp('^' + _constants.C_CHARS + '+$').test(string)) {
+			var _this = _possibleConstructorReturn(this, (CODE128B.__proto__ || Object.getPrototypeOf(CODE128B)).call(this, _constants.B_START_CHAR + _constants.CODE_C_CHAR + string, options));
+		} else {
+			var _this = _possibleConstructorReturn(this, (CODE128B.__proto__ || Object.getPrototypeOf(CODE128B)).call(this, _constants.B_START_CHAR + string, options));
+		}
+		return _possibleConstructorReturn(_this);
 	}
 
 	_createClass(CODE128B, [{

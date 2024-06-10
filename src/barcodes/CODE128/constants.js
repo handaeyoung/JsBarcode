@@ -26,6 +26,7 @@ export const SWAP = {
 	99: SET_C,
 };
 
+export const CODE_C_CHAR = String.fromCharCode(204); // CODE_C(99) + 105
 export const A_START_CHAR = String.fromCharCode(208); // START_A + 105
 export const B_START_CHAR = String.fromCharCode(209); // START_B + 105
 export const C_START_CHAR = String.fromCharCode(210); // START_C + 105

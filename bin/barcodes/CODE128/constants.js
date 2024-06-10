@@ -32,6 +32,7 @@ var SWAP = exports.SWAP = {
 	99: SET_C
 };
 
+var CODE_C_CHAR = exports.CODE_C_CHAR = String.fromCharCode(204); // CODE_C(99) + 105
 var A_START_CHAR = exports.A_START_CHAR = String.fromCharCode(208); // START_A + 105
 var B_START_CHAR = exports.B_START_CHAR = String.fromCharCode(209); // START_B + 105
 var C_START_CHAR = exports.C_START_CHAR = String.fromCharCode(210); // START_C + 105
